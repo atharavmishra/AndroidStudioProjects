@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
+    android:orientation="horizontal"
+
+    tools:context="com.example.android.miwok.Numbers">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:paddingRight="16dp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/category_numbers"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:drawSelectorOnTop="true"
+        >
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="Bold"
+            android:paddingLeft="16dp"
+            android:paddingTop="32dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"/>
+
+
+
+
+
+    </LinearLayout>
+<ImageButton
+    android:id="@+id/Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="35dp"
+    android:paddingBottom="35dp"
+    android:paddingRight="16dp"
+    android:layout_gravity="center"
+    android:src="@android:drawable/ic_media_play"/>
+
+    </LinearLayout>
+
+
+
+
+
