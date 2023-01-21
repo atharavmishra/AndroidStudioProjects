@@ -62,7 +62,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
             loaderManager.initLoader(EARTHQUAKE_LOADER_ID, null, this);
         }
         else
-        txt.setText("No Internet availaible");
+        txt.setText("No Internet available");
     }
 
     private void updateUi(ArrayList<Word> earthquakes) {
