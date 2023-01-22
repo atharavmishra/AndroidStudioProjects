@@ -21,6 +21,8 @@ import androidx.compose.ui.geometry.Offset.Companion.Unspecified
 import androidx.compose.ui.geometry.Size.Companion.Unspecified
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.TextUnitType.Companion.Unspecified
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
@@ -94,7 +96,7 @@ Surface(
         trailingIcon = { IconButton(onClick = { passwordvisibility = !passwordvisibility }) {
             Icon(painter = icon,
                 contentDescription = "Visible" )
-        }})
+        }}, visualTransformation = if(passwordvisibility) VisualTransformation.None else PasswordVisualTransformation())
 
 }
 }
